@@ -1,0 +1,51 @@
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.1.5.RELEASE)
+
+2021-01-10 23:31:37.972  INFO 40856 --- [           main] c.u.ecommerce.ECommerceApplication       : Starting ECommerceApplication on JT with PID 40856 (D:\source\udacity\p04\eCommerce\target\classes started by James in D:\source\udacity\p04)
+2021-01-10 23:31:37.974  INFO 40856 --- [           main] c.u.ecommerce.ECommerceApplication       : No active profile set, falling back to default profiles: default
+2021-01-10 23:31:38.416  INFO 40856 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-01-10 23:31:38.473  INFO 40856 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 51ms. Found 4 repository interfaces.
+2021-01-10 23:31:38.882  INFO 40856 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f3b0ca4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-10 23:31:39.076  INFO 40856 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2021-01-10 23:31:39.096  INFO 40856 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-10 23:31:39.096  INFO 40856 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2021-01-10 23:31:39.187  INFO 40856 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-01-10 23:31:39.187  INFO 40856 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1184 ms
+2021-01-10 23:31:39.302  INFO 40856 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-01-10 23:31:39.361  INFO 40856 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-01-10 23:31:39.398  INFO 40856 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-01-10 23:31:39.435  INFO 40856 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2021-01-10 23:31:39.436  INFO 40856 --- [           main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2021-01-10 23:31:39.510  INFO 40856 --- [           main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2021-01-10 23:31:39.609  INFO 40856 --- [           main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-01-10 23:31:40.048  INFO 40856 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-01-10 23:31:40.439  WARN 40856 --- [           main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-01-10 23:31:40.493  INFO 40856 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@366b4a7b, org.springframework.security.web.context.SecurityContextPersistenceFilter@3700994c, org.springframework.security.web.header.HeaderWriterFilter@749ee0e3, org.springframework.web.filter.CorsFilter@a251135, org.springframework.security.web.authentication.logout.LogoutFilter@40fcaae7, com.udacity.ecommerce.security.JWTAuthenticationFilter@70819ba8, com.udacity.ecommerce.security.JWTAuthenticationVerificationFilter@446a692f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4eb48298, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5e2b512b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@283ecb4b, org.springframework.security.web.session.SessionManagementFilter@6bfbab1c, org.springframework.security.web.access.ExceptionTranslationFilter@54970127, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@17e2835c]
+2021-01-10 23:31:40.575  INFO 40856 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-10 23:31:40.686  INFO 40856 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2021-01-10 23:31:40.688  INFO 40856 --- [           main] c.u.ecommerce.ECommerceApplication       : Started ECommerceApplication in 2.914 seconds (JVM running for 3.412)
+2021-01-10 23:31:50.555  INFO 40856 --- [nio-8888-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-10 23:31:50.555  INFO 40856 --- [nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-01-10 23:31:50.561  INFO 40856 --- [nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2021-01-10 23:31:50.626  INFO 40856 --- [nio-8888-exec-1] c.u.e.controllers.UserController         : Creating user james
+2021-01-10 23:31:50.626 ERROR 40856 --- [nio-8888-exec-1] c.u.e.controllers.UserController         : Error with user password, cannot create user james
+2021-01-10 23:31:56.114  INFO 40856 --- [nio-8888-exec-4] c.u.e.controllers.UserController         : Creating user james
+2021-01-10 23:31:56.230  INFO 40856 --- [nio-8888-exec-4] c.u.e.controllers.UserController         : User created successfully - james
+2021-01-10 23:32:04.271  INFO 40856 --- [nio-8888-exec-5] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2021-01-10 23:32:29.495  INFO 40856 --- [nio-8888-exec-8] c.u.e.controllers.OrderController        : Submitting order for james
+2021-01-10 23:32:29.504  INFO 40856 --- [nio-8888-exec-8] c.u.e.controllers.OrderController        : Order submitted successfully for james
+2021-01-10 23:33:46.691  INFO 40856 --- [nio-8888-exec-1] c.u.e.controllers.OrderController        : Submitting order for test
+2021-01-10 23:33:46.692 ERROR 40856 --- [nio-8888-exec-1] c.u.e.controllers.OrderController        : No order able to be submitted for user test
+2021-01-10 23:35:28.122  INFO 40856 --- [       Thread-3] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-01-10 23:35:28.124  INFO 40856 --- [       Thread-3] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-01-10 23:35:28.125  INFO 40856 --- [       Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-01-10 23:35:28.129  INFO 40856 --- [       Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+
+Process finished with exit code 1
