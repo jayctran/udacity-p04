@@ -10,6 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.udacity.ecommerce.model.persistence.User;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
@@ -21,6 +22,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 import static com.auth0.jwt.algorithms.Algorithm.HMAC512;
 
+@Slf4j
 public class JWTAuthenticationFilter extends UsernamePasswordAuthenticationFilter {
 
     private AuthenticationManager authenticationManager;
@@ -32,9 +34,12 @@ public class JWTAuthenticationFilter extends UsernamePasswordAuthenticationFilte
     @Override
     public Authentication attemptAuthentication(HttpServletRequest req,
                                                 HttpServletResponse res) throws AuthenticationException {
+        String username = null;
         try {
             User credentials = new ObjectMapper()
                     .readValue(req.getInputStream(), User.class);
+
+            username = credentials.getUsername();
 
             return authenticationManager.authenticate(
                     new UsernamePasswordAuthenticationToken(
@@ -43,6 +48,10 @@ public class JWTAuthenticationFilter extends UsernamePasswordAuthenticationFilte
                             new ArrayList<>()));
         } catch (IOException e) {
             throw new RuntimeException(e);
+        } catch (AuthenticationException e){
+            log.info("User authentication unsuccessful: " + username);
+            res.setStatus(401);
+            return null;
         }
     }
 
